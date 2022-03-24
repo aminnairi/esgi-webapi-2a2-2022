@@ -9,6 +9,7 @@ if ($route === "users") {
     die();
 }
 
+// À faire
 // GET /posts
 // GET /comments
 // GET /albums
