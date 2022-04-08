@@ -3,27 +3,47 @@ DROP DATABASE IF EXISTS `esgi-webapi-2a2-2022`;
 CREATE DATABASE `esgi-webapi-2a2-2022` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 
 CREATE TABLE users(
-    id INTEGER PRIMARY KEY AUTO_INCREMENT
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(25) NOT NULL,
+    username VARCHAR(25) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    phone CHAR(10) NOT NULL,
+    website varchar(50) NOT NULL
 ) ENGINE = InnoDB;
 
 CREATE TABLE posts(
-    id INTEGER PRIMARY KEY AUTO_INCREMENT
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    userId INT NOT NULL REFERENCES users(id),
+    title VARCHAR(25) NOT NULL,
+    body TEXT NOT NULL
 ) ENGINE = InnoDB;
 
--- posts
--- https://jsonplaceholder.typicode.com/posts
+CREATE TABLE comments(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    postId INT NOT NULL REFERENCES posts(id),
+    name VARCHAR(25) NOT NULL,
+    email VARCHAR(50) NOT NULL
+) ENGINE = InnoDB;
 
--- comments
--- https://jsonplaceholder.typicode.com/comments
+CREATE TABLE albums(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    userId INT NOT NULL REFERENCES users(id),
+    title VARCHAR(25) NOT NULL
+) ENGINE = InnoDB;
 
--- albums
--- https://jsonplaceholder.typicode.com/albums
+CREATE TABLE photos(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    albumId INT NOT NULL REFERENCES albums(id),
+    title VARCHAR(25) NOT NULL,
+    url VARCHAR(100) NOT NULL,
+    thumbnailUrl VARCHAR(100) NOT NULL
+) ENGINE = InnoDB;
 
--- users (tout sauf "address" et "company")
--- https://jsonplaceholder.typicode.com/users
+CREATE TABLE todos(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    userId INT NOT NULL REFERENCES users(id),
+    title VARCHAR(25) NOT NULL,
+    completed BOOLEAN DEFAULT FALSE
+) ENGINE = InnoDB;
 
--- todos
--- https://jsonplaceholder.typicode.com/todos
-
--- photos
--- https://jsonplaceholder.typicode.com/photos
+INSERT INTO users(name, username, email, phone, website) VALUES('John DOE', 'johndoe', 'john@doe.com', '0102030405', 'johndoe.com');

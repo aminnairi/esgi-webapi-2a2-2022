@@ -1,6 +1,11 @@
 <?php
 
 /**
+ * Les codes de statut HTTP
+ * @see https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+ */
+
+/**
  * Permet de paramétrer son moteur PHP (surcharge le fichier php.ini)
  * @see https://www.php.net/manual/en/function.ini-set.php
  */

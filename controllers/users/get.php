@@ -1,5 +1,12 @@
 <?php
 
 include __DIR__ . "/../../library/json-response.php";
+include __DIR__ . "/../../models/users.php";
 
-Response::json(201, [], [ "email" => true ]);
+try {
+    $users = UserModel::getAll();
+    Response::json(200, [], [ "users" => $users ]);
+} catch (PDOException $exception) {
+    $errorMessage = $exception->getMessage();
+    Response::json(500, [], [ "error" => "Error while accessing the database: $errorMessage" ]);
+}
