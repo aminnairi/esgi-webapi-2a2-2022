@@ -3,7 +3,7 @@
 ## Séances
 
 - [X] Séance 1
-- [ ] Séance 2
+- [X] Séance 2
 - [ ] Séance 3
 - [ ] Séance 4
 - [ ] Séance 5
@@ -11,11 +11,10 @@
 ## Contrôles Continus
 
 - [ ] Premier contrôle continu (à prévoir)
-- [ ] Deuxième contrôle continu (à prévoir)
 
-## Références
+## À faire
 
-N/A.
+Récupérer chaque entités depuis la BDD, créer chaque entité depuis la BDD (uniquement GET et POST).
 
 ## Todo
 
