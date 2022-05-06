@@ -10,7 +10,7 @@
 
 ## Contrôles Continus
 
-- [ ] Premier contrôle continu (à prévoir)
+- [ ] Premier contrôle continu (19/05/2022)
 
 ## À faire
 
