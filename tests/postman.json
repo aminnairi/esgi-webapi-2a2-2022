@@ -1,0 +1,657 @@
+{
+	"info": {
+		"_postman_id": "f4de3d0f-65c6-4a08-9bac-ab0168e38e0e",
+		"name": "esgi-webapi-2a2-2022",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "get all users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create a new user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Amin NAIRI\",\n    \"username\": \"anairi\",\n    \"email\": \"anairi@esgi.fr\",\n    \"phone\": \"0102030405\",\n    \"website\": \"github.com/aminnairi\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update a user",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"email\": \"other@domain.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "posts",
+			"item": [
+				{
+					"name": "get all posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create a new post",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": 1,\n    \"title\": \"Titre\",\n    \"body\": \"Article\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update a post",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"body\": \"New body\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a post",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/posts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"posts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "albums",
+			"item": [
+				{
+					"name": "get all albums",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/albums",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"albums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create a new album",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": 1,\n    \"title\": \"Titre\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/albums",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"albums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update an album",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"title\": \"New title\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/albums",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"albums"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete an album",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/albums",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"albums"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "todos",
+			"item": [
+				{
+					"name": "get all todos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/todos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create a new todo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"userId\": 1,\n    \"title\": \"Titre\",\n    \"completed\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/todos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update a todo",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"title\": \"New title\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/todos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a todo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/todos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"todos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "comments",
+			"item": [
+				{
+					"name": "create a new comment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"postId\": 1,\n    \"name\": \"John DOE\",\n    \"email\": \"email@domain.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update a comment",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"name\": \"New name\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a comment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/comments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "photos",
+			"item": [
+				{
+					"name": "get all photos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/photos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create a new photo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"albumId\": 1,\n    \"title\": \"Titre\",\n    \"url\": \"http://album.com\",\n    \"thumbnailUrl\": \"http://thumbnail.album.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/photos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update a photo",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"title\": \"New title\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/photos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"photos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete a photo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/esgi-webapi-2a2-2022/photos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"esgi-webapi-2a2-2022",
+								"photos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
