@@ -2,11 +2,11 @@
 
 ## Séances
 
-- [X] Séance 1
-- [X] Séance 2
-- [ ] Séance 3
-- [ ] Séance 4
-- [ ] Séance 5
+- [X] Séance 1 08/04/2022
+- [X] Séance 2 06/05/2022
+- [ ] Séance 3 19/05/2022
+- [ ] Séance 4 27/05/2022
+- [ ] Séance 5 03/06/2022
 
 ## Contrôles Continus
 
@@ -28,8 +28,8 @@ Récupérer chaque entités depuis la BDD, créer chaque entité depuis la BDD (
 - [X] En-tête de réponse
 - [X] Code de statut de réponse
 - [X] Méthodes HTTP
-- [ ] Routeur
-- [ ] Contrôleur
-- [ ] Modèle
-- [ ] PHP Data Object
+- [X] Routeur
+- [X] Contrôleur
+- [X] Modèle
+- [X] PHP Data Object
 - [ ] Authentification
