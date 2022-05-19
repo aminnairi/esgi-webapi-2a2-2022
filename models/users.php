@@ -1,6 +1,6 @@
 <?php
 
-include __DIR__ . "/../library/get-database-connection.php";
+require __DIR__ . "/../library/get-database-connection.php";
 
 class UserModel
 {
@@ -17,14 +17,8 @@ class UserModel
 
     public static function create($user)
     {
-        $name = $user["name"];
-        $username = $user["username"];
-        $email = $user["email"];
-        $phone = $user["phone"];
-        $website = $user["website"];
-
         $connection = getDatabaseConnection();
-
-        $createUserQuery = $connection->query("INSERT INTO users(name, username, email, phone, website) VALUES('$name', '$username', '$email', '$phone', '$website');");
+        $createUserQuery = $connection->prepare("INSERT INTO users(name, username, email, phone, website) VALUES(:name, :username, :email, :phone, :website);");
+        $createUserQuery->execute($user);
     }
 }

@@ -4,13 +4,13 @@
 
 - [X] Séance 1 08/04/2022
 - [X] Séance 2 06/05/2022
-- [ ] Séance 3 19/05/2022
+- [X] Séance 3 19/05/2022
 - [ ] Séance 4 27/05/2022
 - [ ] Séance 5 03/06/2022
 
 ## Contrôles Continus
 
-- [ ] Premier contrôle continu (19/05/2022)
+- [X] Premier contrôle continu (19/05/2022)
 
 ## À faire
 
