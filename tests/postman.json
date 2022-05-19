@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "f4de3d0f-65c6-4a08-9bac-ab0168e38e0e",
+		"_postman_id": "c7f3aa6c-cc97-40b3-af62-3d19de3e29b3",
 		"name": "esgi-webapi-2a2-2022",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -34,7 +34,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"Amin NAIRI\",\n    \"username\": \"anairi\",\n    \"email\": \"anairi@esgi.fr\",\n    \"phone\": \"0102030405\",\n    \"website\": \"github.com/aminnairi\"\n}",
+							"raw": "{\n    \"name\": \"'); DELETE FROM users; Frédéric SANANES\",\n    \"username\": \"fsananes\",\n    \"email\": \"fsananes@esgi.fr\",\n    \"phone\": \"0102030405\",\n    \"website\": \"github.com/fsananes\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -90,7 +90,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 2\n}",
+							"raw": "{\n    \"id\": 5\n}",
 							"options": {
 								"raw": {
 									"language": "json"
