@@ -14,7 +14,7 @@
 
 ## À faire
 
-Récupérer chaque entités depuis la BDD, créer chaque entité depuis la BDD (uniquement GET et POST).
+Faire le `update` pour l'entité `users`.
 
 ## Todo
 
