@@ -34,7 +34,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"name\": \"'); DELETE FROM users; Frédéric SANANES\",\n    \"username\": \"fsananes\",\n    \"email\": \"fsananes@esgi.fr\",\n    \"phone\": \"0102030405\",\n    \"website\": \"github.com/fsananes\"\n}",
+							"raw": "{\n    \"name\": \"Frédéric SANANES\",\n    \"username\": \"fsananes\",\n    \"email\": \"fsananes@esgi.fr\",\n    \"phone\": \"0102030405\",\n    \"website\": \"github.com/fsananes\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -62,7 +62,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 1,\n    \"email\": \"other@domain.com\"\n}",
+							"raw": "{\n    \"id\": 4,\n    \"email\": \"amin@tachyon262.com\",\n    \"username\": \"amin.tachyon262\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -170,7 +170,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 1,\n    \"body\": \"New body\"\n}",
+							"raw": "{\n    \"id\": 2,\n    \"body\": \"New body\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -198,7 +198,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 2\n}",
+							"raw": "{\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -278,7 +278,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 1,\n    \"title\": \"New title\"\n}",
+							"raw": "{\n    \"id\": 2,\n    \"title\": \"New title\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -306,7 +306,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 2\n}",
+							"raw": "{\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -386,7 +386,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 1,\n    \"title\": \"New title\"\n}",
+							"raw": "{\n    \"id\": 2,\n    \"title\": \"New title\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -414,7 +414,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 2\n}",
+							"raw": "{\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -630,7 +630,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 2\n}",
+							"raw": "{\n    \"id\": 1\n}",
 							"options": {
 								"raw": {
 									"language": "json"

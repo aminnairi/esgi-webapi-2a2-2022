@@ -49,4 +49,25 @@ class UserModel
             ]
         );
     }
+
+    public static function updateById($json)
+    {
+        $allowedColumns = ["email", "name", "username", "phone", "website"];
+        $columns = array_keys($json);
+        $set = [];
+
+        foreach ($columns as $column) {
+            if (!in_array($column, $allowedColumns)) {
+                continue;
+            }
+
+            $set[] = "$column = :$column";
+        }
+
+        $set = implode(", ", $set);
+        $sql = "UPDATE users SET $set WHERE id = :id";
+        $connection = getDatabaseConnection();
+        $query = $connection->prepare($sql);
+        $query->execute($json);
+    }
 }

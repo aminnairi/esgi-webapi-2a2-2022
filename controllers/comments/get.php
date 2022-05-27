@@ -1,5 +1,11 @@
 <?php
 
-include __DIR__ . "/../../library/json-response.php";
+require __DIR__ . "/../../library/json-response.php";
+require __DIR__ . "/../../models/comments.php";
 
-Response::json(201, [], [ "comments" => true ]);
+try {
+    $comments = CommentModel::getAll();
+    Response::json(200, [], ["success" => true, "comments" => $comments]);
+} catch (PDOException $exception) {
+    Response::json(500, [], ["success" => false, "error" => $exception->getMessage()]);
+}

@@ -6,6 +6,7 @@ class Request
     {
         /**
          * Récupérer le body de la requête HTTP
+         *
          * @see https://www.php.net/manual/en/function.file-get-contents.php
          * @see https://www.php.net/manual/en/wrappers.php.php
          */
@@ -13,9 +14,10 @@ class Request
 
         /**
          * Déserialiser une chaîne de caractères en structure de données PHP
+         *
          * @see https://www.php.net/manual/en/function.json-decode.php
          */
-        $json = json_decode($rawInput);
+        $json = json_decode($rawInput, true);
 
         return $json;
     }
