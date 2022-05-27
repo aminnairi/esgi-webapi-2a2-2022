@@ -38,21 +38,34 @@ class UserModel
         return $user;
     }
 
-    public static function deleteById($id)
+    public static function getByEmail($email)
+    {
+        $connection = getDatabaseConnection();
+        $getUserByIdQuery = $connection->prepare("SELECT * FROM users WHERE email = :email;");
+        $getUserByIdQuery->execute(["email" => $email]);
+        
+        return $getUserByIdQuery->fetch();
+    }
+
+    public static function getByToken($token)
+    {
+        $connection = getDatabaseConnection();
+        $getUserByIdQuery = $connection->prepare("SELECT * FROM users WHERE token = :token;");
+        $getUserByIdQuery->execute(["token" => $token]);
+        
+        return $getUserByIdQuery->fetch();
+    }
+
+    public static function deleteById($user)
     {
         $connection = getDatabaseConnection();
         $deleteByIdQuery = $connection->prepare("DELETE FROM users WHERE id = :id;");
-
-        $deleteByIdQuery->execute(
-            [
-            "id" => $id
-            ]
-        );
+        $deleteByIdQuery->execute($user);
     }
 
     public static function updateById($json)
     {
-        $allowedColumns = ["email", "name", "username", "phone", "website"];
+        $allowedColumns = ["email", "name", "username", "phone", "website", "password", "token"];
         $columns = array_keys($json);
         $set = [];
 

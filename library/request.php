@@ -21,4 +21,20 @@ class Request
 
         return $json;
     }
+
+    public static function getHeaders()
+    {
+        return getallheaders();
+    }
+
+    public static function getHeader($name, $fallback = "notfound")
+    {
+        $headers = Request::getHeaders();
+
+        if (!isset($headers[$name])) {
+            return $fallback;
+        }
+
+        return $headers[$name];
+    }
 }

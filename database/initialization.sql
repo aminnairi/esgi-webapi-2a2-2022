@@ -48,4 +48,4 @@ CREATE TABLE todos(
     completed BOOLEAN DEFAULT FALSE
 ) ENGINE = InnoDB;
 
-INSERT INTO users(name, username, email, phone, website) VALUES('John DOE', 'johndoe', 'john@doe.com', '0102030405', 'johndoe.com');
+INSERT INTO users(name, username, email, phone, website, password) VALUES('John DOE', 'johndoe', 'john@doe.com', '0102030405', 'johndoe.com', 'password');
